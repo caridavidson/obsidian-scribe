@@ -57,15 +57,7 @@ export async function appendToDailyNote(
             // Append to existing section
             const lines = content.split('\n');
             const meetingsIndex = lines.findIndex(line => line.trim() === settings.dailyNoteSection);
-
-            // Find end of section (next header or end of file)
-            let insertIndex = meetingsIndex + 1;
-            while (insertIndex < lines.length && !lines[insertIndex].startsWith('#')) {
-                insertIndex++;
-            }
-
-            // Insert before the next header
-            lines.splice(insertIndex, 0, link);
+            lines.splice(meetingsIndex + 1, 0, link);
             await app.vault.modify(dailyNote, lines.join('\n'));
         } else {
             // Create section at the end
