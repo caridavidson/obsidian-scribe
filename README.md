@@ -2,6 +2,8 @@
 
 An Obsidian plugin for recording and transcribing audio notes with AI-powered speaker diarization, summaries, and action item extraction.
 
+> 💝 **Love this plugin?** Consider [buying me a coffee](https://pay.qonto.com/payment-links/019ac53d-dd28-7d8d-a974-5f0f24b6e86a?resource_id=019ac53d-dd1f-7693-aade-000226277560) to support development!
+
 ## Features
 
 - 🎙️ **One-Click Recording**: Start recording with a ribbon icon or hotkey (`Cmd+Shift+R`)
@@ -12,6 +14,7 @@ An Obsidian plugin for recording and transcribing audio notes with AI-powered sp
 - 📁 **Organized Storage**: Saves recordings in `scribed/{timestamp}/` folders
 - 🔗 **Daily Note Integration**: Automatically links transcriptions to your daily notes
 - 🎨 **Clean UI**: Visual recording modal with status indicators
+- ⚙️ **Fully Configurable**: Customize folders, filenames, link formats, and more
 
 ## Installation
 
@@ -55,6 +58,21 @@ Enable post-processing to add:
 - **Action Items**: Extracted as checkboxes
 
 Configure your speaker label in settings (default: "Me").
+
+### Storage & Organization
+
+Customize:
+- Transcription folder location
+- Folder timestamp format
+- Audio and transcription filenames
+
+### Daily Note Integration
+
+Configure:
+- Toggle auto-linking on/off
+- Custom section heading
+- Link format with `{path}` and `{time}` placeholders
+- Link timestamp format
 
 ## Usage
 
@@ -121,15 +139,20 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Submit a pull request
 
+## Support This Project
+
+This plugin is **free and open source**. If you find it valuable:
+
+- ⭐ **Star this repository** on GitHub
+- ☕ **[Buy me a coffee](https://pay.qonto.com/payment-links/019ac53d-dd28-7d8d-a974-5f0f24b6e86a?resource_id=019ac53d-dd1f-7693-aade-000226277560)** to support development
+- 💬 **Share feedback** and help improve the project
+- 🐛 **Report bugs** or contribute code
+
+Your support helps maintain and improve this project for everyone!
+
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details
-
-## Support
-
-- 🐛 [Report a bug](https://github.com/yourusername/obsidian-scribe/issues)
-- 💡 [Request a feature](https://github.com/yourusername/obsidian-scribe/issues)
-- 📖 [Documentation](https://github.com/yourusername/obsidian-scribe/wiki)
+MIT License with Donation Request - see [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
